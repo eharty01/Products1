@@ -1,11 +1,35 @@
 header {
-    position: fixed;
+    margin: auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    gap: 20px;
 }
 
 h2 {
   color: lightgoldenrodyellow;
   text-decoration: underline;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  height: 50px;
+  width: 110px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: orange;
 }
 
 body {
@@ -27,4 +51,44 @@ body img {
     border-radius: 50%;
     width: 100px;
     padding: 10px;
+}
+
+#product-display {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-box {
+  border: solid 3px white;
+  color: white;
+  border-radius: 5px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.product-box:hover {
+  border: solid 3px grey;
+  cursor: pointer;
+  background-color: white;
+  color: grey
+}
+
+.product-box h3 {
+  color: orange;
+}
+
+#selectFilter {
+  height: 30px;
+  width: 150px;
+}
+
+#filteredMatches {
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
 }
